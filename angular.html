@@ -1,0 +1,65 @@
+<html lang="en" >
+<head>
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body ng-app="AngularApp" ng-cloak>
+  <!-- Your HTML content here -->  
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs="70" flex-gt-xs="50" layout="column">
+      <md-card ng-repeat="i in [1,2]">
+      <md-card-header>
+      <md-card-avatar>
+      <img src="angular.png" class="md-user-avatar">
+      </md-card-avatar>
+      <md-card-header-text>
+      <span class="md-title">Linda Holmberg</span>
+      <span class="md-subhead">8 feb 2016</span>
+      </md-card-header-text>
+      </md-card-header>
+      <md-card-content>
+      <p>Hej, jag heter Linda och blablablaaaa!</p>
+      </md-card-content>
+       <img src="natur.jpeg" class="md-card-image" alt="image caption">
+       <md-card-actions>
+       <md-card-icon-actions>
+       <md-button class="md-icon-button" aria-label="icon">
+      	<md-icon> favorite</md-icon>
+       </md-button>
+       <md-button class="md-icon-button" aria-label="icon">
+      	<md-icon>share_arrow</md-icon>
+       </md-button>
+       <span flex></span>
+       <md-button class="md-icon-button" aria-label="icon" >
+      	<md-icon>chat</md-icon>
+       </md-button>
+       </md-card-icon-actions>
+       </md-card-actions>
+      </md-card>
+    </div>
+  </md-content>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    angular.module('AngularApp', ['ngMaterial']);
+  </script>
+  
+</body>
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
